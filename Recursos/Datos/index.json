@@ -1,0 +1,27 @@
+[
+    {
+        
+        "Titulo":"Ventas",
+        "Texto":"en el area de ventas podras registrar editar y eliminar registros de tus ventas asi mismo como solicitar informacion referente a ventas anteriores." ,
+        "url1":"Recursos/Imagenes-de-ejemplo/Ejemplo1-1.png",
+        "url2":"Recursos/Imagenes-de-ejemplo/Ejemplo1-2.png"
+    },
+    {
+        "Titulo":"Gastos y Costos",
+        "Texto":"en el area de costos y gastos podras registrar editar y eliminar registros de tus ventas asi mismo como solicitar informacion referente a ventas anteriores." ,
+        "url1":"Recursos/Imagenes-de-ejemplo/Ejemplo2-1.png",
+        "url2":"Recursos/Imagenes-de-ejemplo/Ejemplo2-1.png"
+    },
+    {
+        "Titulo":"Balance Inicial",
+        "Texto":"en el area de costos y gastos podras registrar editar y eliminar registros de tus ventas asi mismo como solicitar informacion referente a ventas anteriores.",
+        "url1":"Recursos/Imagenes-de-ejemplo/Ejemplo-3-1.png",
+        "url2":"Recursos/Imagenes-de-ejemplo/Ejemplo-3-2png"
+    },
+    {
+        "Titulo":"Estado de situacion financiera",
+        "Texto":"en el area de costos y gastos podras registrar editar y eliminar registros de tus ventas asi mismo como solicitar informacion referente a ventas anteriores.",
+        "url1":"Recursos/Imagenes-de-ejemplo/Ejemplo4-1.png",
+        "url2":"Recursos/Imagenes-de-ejemplo/Ejemplo4-2.png"
+    }
+]

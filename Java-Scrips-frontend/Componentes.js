@@ -15,22 +15,23 @@ class Cabecera extends HTMLElement
         <section class="barra-navegacion">
            <section class="limite contenido-barra-navegacion">
                 <div class="contenido-icono">
-                    <img src="Recursos/Imagenes/logo-removebg-preview.png" alt="">
-                    <h1>EAS</h1>
+                    <img class="Logo-img" src="Recursos/Imagenes/logo-removebg-preview.png" alt="">
+                    <h1 id="Letras-L">EAS</h1>
                 </div>
                    <div class="Menu">
                     <div class="Menu-1">
                         <div class="contenedor-enlaces">
                             <ul>
-                                <li class="enlaces-individual"><a href="#">Home</a></li>
-                                <li class="enlaces-individual"><a href="#">Service</a></li>
-                                <li class="enlaces-individual"><a href="#">Contact</a></li>
-                                <li class="enlaces-individual"><a href="#" class="enlace-premium">Conviertete en premium</a></li>
+                                <li id="Enlace" class="enlaces-individual"><a href="./Index.html">Home</a></li>
+                                <li id="Enlace" class="enlaces-individual"><a href="./Servicio.html">Service</a></li>
+                                <li id="Enlace" class="enlaces-individual"><a href="./contacto.html">Contact</a></li>
+                                <li id="Enlace" class="enlaces-individual"><a href="./Planes.html" id="EP" class="enlace-premium">Conviertete en premium</a></li>
                             </ul>
                         </div>
                            <div class="contenedor-botones-header">
-                            <input class="botones-header btn-1-header" type="button" value="Login">
-                            <input class="botones-header btn-2-header" type="button" value="¡Inicia gratis!">
+                           <a href="./Inicio-sesion.html" id="boton-h1" class="botones-header btn-1-header">Login</a> 
+                           <a href="./Registrar.html" class="botones-header btn-2-header" >¡Inicia gratis!</a>
+                           
                         </div>
                     </div>
                   </div>
@@ -41,7 +42,10 @@ class Cabecera extends HTMLElement
                     </div>
                     <i id="btn-desplegar"  class="fa-solid fa-caret-down btndes"></i>
                 </div>
-                       <i class="hamburger fa-solid fa-bars"></i>
+                      <div class="btn-h">
+                      <i class="hamburger fa-solid fa-bars"></i>
+                      </div>
+                      
              </section>
         </section>
         <div class="ventana-perfil">

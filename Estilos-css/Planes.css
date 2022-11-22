@@ -152,6 +152,11 @@ body
     align-items: center;
     
 }
+.targeta-1 .targeta-part2 h3{
+    position: relative;
+    top: 20px;
+    margin-top: -30px;
+}
 .targeta-part2 h3{
     margin-bottom: 20px;
     font-family: var(--Roboto);
@@ -209,14 +214,20 @@ body
     font-weight: bold;
     box-shadow: 0 0 4px rgba(0,0,0, 0.3);
     margin-bottom: 25px;
+    text-decoration: none;
+    font-family: var(--Roboto);
 }
 .btn:hover
 {
-   
     box-shadow: none;
 }
 .targeta1 .btn{
+    position: relative;
     background: var(--Amarillo-Primario);
+    transform: translateY(-10px);
+    margin-bottom: 20px;
+    font-size: 13px;
+    bottom: 35px;
 }
 .targeta-p3
 {
@@ -651,4 +662,36 @@ footer
 {
     width: 100%;
     background: var(--Negro);
+}
+
+/*!............................................*/
+#Letras-L
+{
+  color: #ffe;
+}
+#Enlace a
+{
+  color: #ccc;
+}
+#Enlace:nth-child(4) a
+{
+  
+}
+.barra-navegacion.sticky #Enlace:nth-child(4) a
+{
+  color: var(--Amarillo-Primario);
+}
+#boton-h1
+{
+  border: 2px solid #ccc;
+  color: #ccc;
+}
+#boton-h1:hover
+{
+   color: #fff;
+   border:2px solid #fff;
+}
+#EP a
+{
+  color:hsl(241, 54%, 36%);
 }

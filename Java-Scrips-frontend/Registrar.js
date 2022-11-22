@@ -36,3 +36,10 @@ boton_guardar_2.addEventListener('click',()=>
 
   Enunciado.textContent="Datos de cuenta."
 })
+
+
+
+
+/*Cambiar imagen por el logotipo invertido en color blanco
+document.getElementById("Logo-tipo").src="./Recursos/Imagenes/LOGO-inverso.png"
+*/

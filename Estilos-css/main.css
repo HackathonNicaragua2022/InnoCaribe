@@ -1258,9 +1258,9 @@ footer
 }
 .targetita h6
 {
-    font-family: var(--Epilogue);
+    font-family: var(--Roboto);
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 600;
     width: 70%;
     margin: 20px auto;
     margin-bottom: 10px;

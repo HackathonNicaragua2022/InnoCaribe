@@ -48,7 +48,12 @@ box-shadow: 0 0 7px rgba(0,0,0,.2);
     margin: 0;
     padding: 30px 0 0 30px;
 }
-
+#Logo-tipo
+{
+    width: 40px;
+    height: 40px;
+    margin: 0 25px;
+}
 .part1-r
 {
     width: 35%;
@@ -73,13 +78,13 @@ box-shadow: 0 0 7px rgba(0,0,0,.2);
 .cont-info-condi
 {
     width: 80%;
-    
+    margin: 0 auto;
     margin-top: 80px;
 }
 .cont-condi-1
 {
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 20px auto;
     background: #012fa3;
     border-radius: 7px;
@@ -90,6 +95,9 @@ box-shadow: 0 0 7px rgba(0,0,0,.2);
     color: #ccc;
     
     cursor: pointer;
+}
+.cont-condi-1:hover{
+    color: var(--Amarillo-Primario);
 }
 .cont-condi-1 h4{
     font-family: var(--Roboto);
@@ -582,7 +590,7 @@ main
 }
 .logo-r h1
 {
-    color: rgb(206, 203, 203);
+    color: #fff;
 }
 main
 {

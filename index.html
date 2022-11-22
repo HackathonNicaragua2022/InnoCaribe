@@ -9,11 +9,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="Estilos-css/main.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   
 
     <title>EAS</title>
 </head>
 <body>
+    <script>
+        AOS.init();
+      </script>
     <!-- Creacion de Header que funcionara como componente en toda la plataforma web...-->
     <section class="header">
         <header>
@@ -26,9 +28,9 @@
                     <div class="Menu-1">
                         <nav>
                             <ul>
-                                <li><a href=" /index.html">Home</a></li>
-                                <li><a href="/Servicio.html">Service</a></li>
-                                <li><a href="/contacto.html">Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="./Servicio.html">Service</a></li>
+                                <li><a href="./contacto.html">Contact</a></li>
                                 <li><a href="Planes.html" class="a-E">Conviertete en premium</a></li>
                             </ul>
                         </nav>
@@ -40,19 +42,19 @@
                   </div>
                        <i class="hamburger fa-solid fa-bars"></i>
              </section>
-        </header>}
+        </header>
         <!-- Definiendo clase que funcionara como atraccin visual de la pagina de inicio -->
         <section class="limite Welcome">
-            <div class="cont-part-1">
+            <div data-aos="fade-right" class="cont-part-1">
                <h1>Optimiza tu empresa <br> <span>Para llevar un preciso control de tu efectivo con nosotros.</span></h1>
-               <p>si la contabilidad no es tu fuerte y la consideras nesaesaria para tu empresa nuestra plataforma es tu mejor opcion para llevar un orden contable exitoso.</p>
+               <p>si la contabilidad no es tu fuerte y la consideras necesaria para tu empresa nuestra plataforma es tu mejor opcion para llevar un orden contable exitoso.</p>
                <div class="cont-btn-part1">
                 <button class="btn1-W">Inicia gratuitamente</button>
                 <button class="btn2-W">Explora las soluciones</button>
                </div>
             </div>
             <!-- parte N2 de la atraccion visual de bienvenida... -->
-            <div class="cont-part-2">
+            <div data-aos="fade-left" class="cont-part-2">
                 <!-- animacion del archivo svg, que se encuentra en la pagina de inicio -->
                <div class="animacion">
                 <lottie-player src="Recursos/58948-finance-blue.json" background="transparent" class="ilustracion"  speed="1"   loop autoplay></lottie-player>
@@ -141,7 +143,7 @@
             <div class="limite area1">
                 <div class="par1-area1">
                     <h2>Tus datos e informacion <span class="letra-blue">100% seguros.</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet quos quae repudiandae vitae veritatis sit impedit sequi debitis odio accusamus, ut magni consequatur, corrupti ducimus dolorem vel. Velit ea harum consequuntur labore assumenda officiis facere. Autem eius assumenda nisi.</p>
+                    <p>El mecanismo de seguridad que utiliza la plataforma EAs es sumamente eficaz ya que se usa un sistema de cifrado en casos de ataques siberneticos o algun otro intento malicioso, corrupti ducimus dolorem vel. Velit ea harum consequuntur labore assumenda officiis facere. Autem eius assumenda nisi.</p>
                     <button>Explorar</button>
                 </div>
                 <div class="part2-area1">
@@ -155,7 +157,7 @@
                 </div>
                 <div class="part2-area2">
                     <h2>Experiencia sumamanete <span class="letra-blue"> amigable.</span> </h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ipsam ut quasi maxime nam sed.</p>
+                    <p>Utiliza EAS y agerga un eficiente ayudante para tu empresa que te permitira trabajar la contabilidad de forma sencilla.</p>
                     <div class="mini-targetas">
                         <div class="part-visible">
                             <div class="part-visible-1">
@@ -167,7 +169,7 @@
                             <i class="FA  flecha-abajo    fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="part-invisible">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequatur, unde nihil odio suscipit quos!</p>
+                            <p>EAS cuenta con una interfaz sumamente atractiva pero muy sencilla de usar con textos de ayuda integrados.!</p>
                         </div>
                     </div>
                     <div class="mini-targetas M1">
@@ -180,7 +182,7 @@
                             <i class="flecha-abajo FB fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="part-invisible">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequatur, unde nihil odio suscipit quos!</p>
+                            <p>Ademas de la ayuda alojada en la documentacion EAS cuenta con consultores que te hayudaran en cualquier hora!</p>
                         </div>
                     </div>
                     <div class="mini-targetas M2">
@@ -193,7 +195,7 @@
                             <i class="flecha-abajo FC fa-solid fa-chevron-down"></i>
                         </div>
                         <div class="part-invisible">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequatur, unde nihil odio suscipit quos!</p>
+                            <p>Las funcionalidades que aporta EAS estan supervisadas por extertos consultores del area de contabilidad y finanzas!</p>
                         </div>
                     </div>
                 </div>
@@ -201,38 +203,38 @@
 
             </div>
             <div class="limite area3">
-                <h2>administra y maneja la cantidad de tu efectivo de forma confidencial.</h2>
+                <h2>Administra y maneja la cantidad de tu efectivo de forma confidencial.</h2>
                 <img src="Recursos/Imagenes/ilustracion-llave.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quia corrupti quam impedit, nobis natus eaque, fugit maiores modi assumenda eum quaerat temporibus, sunt id non reiciendis hic quidem placeat delectus.</p>
+                <p>Si tenemos un buen control de todas nuestras finanzas nos permitiremos poder tramitar muchísimo mejor todos nuestros recursos, claramente conociendo todos los riesgos a los que nos enfrentamos y así conocer con mucho más detalle todos nuestros ingresos y gastos.</p>
             </div>
             <div class="limite targetitas">
                 <div class="targeta-par targetita">
                     <div class="cont-icono-targetita">
                        <img src="Recursos/Imagenes/1-porq-nosotros.png" alt="">
                     </div>
-                    <h6>Lorem ipsum dolor sit amet.</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laudantium.</p>
+                    <h6>Resultados graficos.</h6>
+                    <p>Se generaran graficas automaticamente de las tablas creadas en periodos especificos</p>
                 </div>
                 <div class="targeta-impar targetita">
                     <div class="cont-icono-targetita">
                         <img src="Recursos/Imagenes/2-porq-nosotros.png" alt="">
                     </div>
-                    <h6>Lorem ipsum dolor sit amet.</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laudantium.</p>
+                    <h6>Inspecciona tu crecimiento.</h6>
+                    <p>Se guardaran todos los movimientos que sean ingresados pra revisiones cuando se deseen.</p>
                 </div>
                 <div class="targeta-par targetita">
                     <div class="cont-icono-targetita">
                         <img src="Recursos/Imagenes/3-porq-nosotros.png" alt="">
                     </div>
-                    <h6>Lorem ipsum dolor sit amet.</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laudantium.</p>
+                    <h6>Prebee futuras perdidas.</h6>
+                    <p>gracias a los libros que ofrecce EAs se pueden prebeer futuras perdidas para evitarlas.</p>
                 </div>
                 <div class="targeta-impar targetita">
                     <div class="cont-icono-targetita">
                         <img src="Recursos/Imagenes/4-porq-nosotros.png" alt="">
                     </div>
-                    <h6>Lorem ipsum dolor sit amet.</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, laudantium.</p>
+                    <h6>Precio muy accesible.</h6>
+                    <p>comparado al monto que suelen cobrar los contadores o consultores el precio de EAS es bajo.</p>
                 </div>
             </div>
         </div>
@@ -287,7 +289,7 @@
                         <div class="cont-primera-clientes">
                             <img src="Recursos/Imagenes/cliente-2.jpg" alt="">
                         </div>
-                        <p class="nom">La nelson</p>
+                        <p class="nom">Florita</p>
                         <p class="tipo-negocio">
                              Centro recreativo
                         </p>
@@ -303,7 +305,7 @@
                         <div class="cont-primera-clientes">
                             <img src="Recursos/Imagenes/cliente-3.jpg" alt="">
                         </div>
-                        <p class="nom">La nelson</p>
+                        <p class="nom">El ranchon</p>
                         <p class="tipo-negocio">
                              Centro recreativo
                         </p>
@@ -319,7 +321,7 @@
                         <div class="cont-primera-clientes">
                             <img src="Recursos/Imagenes/cliente-4.jpg" alt="">
                         </div>
-                        <p class="nom">La nelson</p>
+                        <p class="nom">Salt bae</p>
                         <p class="tipo-negocio">
                              Centro recreativo
                         </p>
@@ -335,9 +337,9 @@
                         <div class="cont-primera-clientes">
                             <img src="Recursos/Imagenes/cliente-5.jpg" alt="">
                         </div>
-                        <p class="nom">La nelson</p>
+                        <p class="nom">Burger</p>
                         <p class="tipo-negocio">
-                             Centro recreativo
+                             Tienda de motos
                         </p>
                         <div class="cont-estrellas">
                             <i class="fa-solid fa-star"></i>
@@ -351,9 +353,9 @@
                         <div class="cont-primera-clientes">
                             <img src="Recursos/Imagenes/cliente-6.jpg" alt="">
                         </div>
-                        <p class="nom">La nelson</p>
+                        <p class="nom">Maytee</p>
                         <p class="tipo-negocio">
-                             Centro recreativo
+                             Marisqueria
                         </p>
                         <div class="cont-estrellas">
                             <i class="fa-solid fa-star"></i>
@@ -367,9 +369,9 @@
                         <div class="cont-primera-clientes">
                             <img src="Recursos/Imagenes/cliente-7.jpg" alt="">
                         </div>
-                        <p class="nom">La nelson</p>
+                        <p class="nom">Rapifacil</p>
                         <p class="tipo-negocio">
-                             Centro recreativo
+                             Colegio
                         </p>
                         <div class="cont-estrellas">
                             <i class="fa-solid fa-star"></i>
@@ -383,9 +385,9 @@
                         <div class="cont-primera-clientes">
                             <img src="Recursos/Imagenes/pexels-andrea-piacquadio-712513.jpg" alt="">
                         </div>
-                        <p class="nom">La nelson</p>
+                        <p class="nom">Cow-bem</p>
                         <p class="tipo-negocio">
-                             Centro recreativo
+                             Distribuidora
                         </p>
                         <div class="cont-estrellas">
                             <i class="fa-solid fa-star"></i>
@@ -399,9 +401,9 @@
                         <div class="cont-primera-clientes">
                             <img src="Recursos/Imagenes/cliente-2.jpg" alt="">
                         </div>
-                        <p class="nom">La nelson</p>
+                        <p class="nom">Damba</p>
                         <p class="tipo-negocio">
-                             Centro recreativo
+                             Cooperativa
                         </p>
                         <div class="cont-estrellas">
                             <i class="fa-solid fa-star"></i>
@@ -417,7 +419,7 @@
                         </div>
                         <p class="nom">La nelson</p>
                         <p class="tipo-negocio">
-                             Centro recreativo
+                             Restaurante
                         </p>
                         <div class="cont-estrellas">
                             <i class="fa-solid fa-star"></i>

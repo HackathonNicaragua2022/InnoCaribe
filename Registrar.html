@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos-css/Registrar.css">
     <script src="https://kit.fontawesome.com/f39c837191.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
     <title>EAS</title>
 </head>
 <body>
+    <script>
+        AOS.init();
+    </script>
    <div class="contenedor">
-   <div class="boton-reg" href="index.html">Inicio</div>
+ 
   <div class="part1-r">
     <div class="cont-part1-r">
         <div class="logo-1 logo-r">
-            <img src="Recursos/Imagenes/logo-removebg-preview.png" alt="">
+            <img id="Logo-tipo" src="Recursos/Imagenes/LOGO-inverso.png" alt="">
             <h1>EAS</h1>
         </div>
         <div class="cont-info">
@@ -35,7 +41,7 @@
   </div>
   <div class="part2-r">
    
-    <div class="con-formulario">
+    <div  class="con-formulario">
         <div class="logo">
             <h3>Cree su cuenta</h3>
         </div>
@@ -68,7 +74,7 @@
              </div>
              <input class="btn-1 btn" type="button" value="Guardar informacion">
         </form>
-        <form class="formu-2 formu-2-2" action="">
+        <form data-aos="fade-down-right" class="formu-2 formu-2-2" action="">
             <div class="linia cuarta-linia">
                 <div class="part part-1">
                     <p>Pais.</p>
@@ -106,7 +112,7 @@
             <input class="btn btn2 btn-3" type="button" value="Crear cuenta">
         </form>
         <div class="enlace-in">
-            <p class="acceso-icio">¿Ya tienes cuenta?<a href="#">Inicia sesion</a></p>
+            <p class="acceso-icio">¿Ya tienes cuenta?<a href="./Inicio-sesion.html">Inicia sesion</a></p>
         </div>
         <div class="slider-idicadores">
             <i class="Ci1 Ci-p fa-solid fa-circle"></i>
@@ -117,6 +123,7 @@
     
    </div>
   </div>
+ 
    <script src="Java-Scrips-frontend/Registrar.js"></script>
 </body>
 </html>

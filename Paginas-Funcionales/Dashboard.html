@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos-css/Funcionales/Dashboard.css">
+    <link rel="stylesheet" href="../Estilos-css/Funcionales/Ventas.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+         rel="stylesheet"
+         href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://kit.fontawesome.com/f39c837191.js" 
+    crossorigin="anonymous"></script>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <title>Dashboard/EAS</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="../Recursos/Imagenes/logo-removebg-preview.png" alt="">
+                    <h2>EAS</h2>
+                </div>
+                <div id="btn-cerrar" class="cerrar">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a class="active btn-enlace" href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <h3>Dashborad</h3>
+                </a>
+                <a class="btn-enlace" href="#">
+                    <i class='bx bx-spreadsheet'></i>
+                    <h3>Orden contable</h3>
+                </a>
+                <a class="btn-enlace" href="#">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <h3>Ventas</h3>
+                </a>
+                <a class="btn-enlace" href="#">
+                    <i class='bx bxs-briefcase-alt'></i>
+                    <h3>Costos y gastos</h3>
+                </a>
+                <a class="btn-enlace" href="#">
+                    <i class="fa-solid fa-message"></i>
+                    <h3>Mensajes</h3>
+                    <span class="mensaje">20</span>
+                </a>
+                <a class="btn-enlace" href="#">
+                    <i class="fa-solid fa-file"></i>
+                    <h3>Catalogo</h3>
+                </a>
+                <a class="btn-enlace" href="#">
+                    <i class='bx bxs-wallet'></i>
+                    <h3>Moneda</h3>
+                </a>
+                <a class="btn-enlace" href="#">
+                    <i class='bx bxs-report'></i>
+                    <h3>Reportes</h3>
+                </a>
+                <a class="btn-enlace" href="#">
+                    <i class='bx bxs-book'></i>
+                    <h3>Documentacion</h3>
+                </a>
+                <a class="btn-enlace" href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h3>Salir</h3>
+                </a>
+            </div>
+        </aside>
+         <main>
+        <div class="parte-superior">
+            <div class="parte-superior-1">
+                <h2>Welcome back ,<span>Anna!</span></h2>
+              
+            </div>
+            <div class="parte-superior-2">
+                <div class="buscar">
+                    <input placeholder="Search" type="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="extras">
+                    <i class="fa-solid fa-bolt"></i>
+                    <i class="fa-solid fa-bell"></i>
+                    <!-- <i class="pequeño indi fa-solid fa-circle"></i>-->
+                   
+                </div>
+                <div class="perfil">
+                       <img class="foto-perfil" src="../Recursos/Imagenes/perfil-1.jpg" alt="">
+                       <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-parte-central">
+            <div class="parte-central">
+                <section class="parte-central-1">
+                    <div class="banner-promocional">
+                       <div class="par-textos">
+                        <h3>Adquiere el plan <span class="tb">premium</span> <br> y obten grandes beneficios <span>ya!</span></h3>
+                        <a href="../Planes.html">Obtenlo ahora</a>
+                       </div>
+                       <img src="../Recursos/Imagenes-parte-funcional/undraw_lightbulb_moment_re_ulyo.svg" alt="">
+                    </div>
+                    <div class="targetas-informacion">
+                        <div class="targeta-informacion targeta-informacion-1">
+                            <div class="cont-img">
+                                <img src="../Recursos/Imagenes-parte-funcional/idea-de-negocio.png" alt="">
+                            </div>
+                            <h3>$126,000</h3>
+                            <h5>Total Ventas</h5>
+                        </div>
+                        <div class="targeta-informacion targeta-informacion-2">
+                            <div class="cont-img">
+                                <img src="../Recursos/Imagenes-parte-funcional/dinero.png" alt="">
+                            </div>
+                            <h3>$12,000</h3>
+                            <h5>Total Ventas</h5>
+                        </div>
+                        <div class="targeta-informacion targeta-informacion-3">
+                            <div class="cont-img">
+                                <img src="../Recursos/Imagenes-parte-funcional/icons8-pie-chart-64.png" alt="">
+                            </div>
+                            <h3>$126,000</h3>
+                            <h5>Total Ventas</h5>
+                        </div>
+                    </div>
+                    <div class="grafica">
+                       <canvas  id="mi-grafico" height="115px"><canvas>
+                    </div>
+                </section>
+                <section class="parte-central-2">
+                   <div class="cont-img-perfil">
+                    <img class="foto-perfil foto-perfil-2" src="../Recursos/Imagenes/perfil-1.jpg" alt="">
+                   </div>
+                   <div class="informacion-montos">
+                    <h5>Total balance</h5>
+                    <h2>$30,240.34</h2>
+                    <div class="cont-cositas">
+                        <p>15.34%</p>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </div>
+                   </div>
+                   <div class="datos-generales">
+                    <h3>Datos generales</h3>
+                    <div class="contenedor-datos">
+                        <div class="datos">
+                            <div class="part1">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <div class="info">
+                                    <h4>Total de ventas</h4>
+                                    <p>ultimas 24 horas</p>
+                                </div>
+                            </div>
+                            
+                            <p class="porciento">34%</p>
+                            <h5 class="monto">4567</h5>
+                        </div>
+                        <div class="datos">
+                           <div class="part1">
+                            <i class="ico2 fa-solid fa-calendar-days"></i>
+                            <div class="info">
+                                <h4>Total de ventas</h4>
+                                <p>ultimas 24 horas</p>
+                            </div>
+                           </div>
+                            <p class="porciento">34%</p>
+                            <h5 class="monto">4567</h5>
+                        </div>
+                        <div class="datos">
+                            <div class="part1">
+                                <i class="ico3 fa-solid fa-tag"></i>
+                            <div class="info">
+                                <h4>Total de ventas</h4>
+                                <p>ultimas 24 horas</p>
+                            </div>
+                            </div>
+                            <p class="porciento">34%</p>
+                            <h5 class="monto">4567</h5>
+                        </div>
+                    </div>
+                   </div>
+                </section>
+            </div>
+            <div class="parte-central-ventas">
+               <div class="parte-central-ventas-superior">
+                <h3>Area de ventas</h3>
+                 <div class="parte-central-ventas-superior-content">
+                    <div class="parte-central-ventas-superior-part1">
+                        <p> Dentro de esta area podra administrar y gestionar informacion acerca de sus ventas podra añadie editar y eliminarlas y de igual forma consultar informacion de un periodo especifico !</p>
+                        <a href="#">Saber mas de esta area</a>
+                      </div>
+                      <img src="../Recursos/Imagenes/Shopping_bag-PhotoRoom.png" alt="">
+                 </div>
+               </div>
+               <div class="parte-central-ventas-formulario">
+                <div class="encabezado">
+                    <h3>Agregar venta al listado</h3>
+                    <div class="ayuda">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <a href="#">Ayuda</a>
+                    </div>
+                </div>
+                <div class="cont-formulario">
+                    <form action="">
+                        <div class="part part-1">
+                            <p>Descripcion de la venta o listado de productos.</p>
+                            <input required placeholder="Pantalon,Silla,Lampara,Toalla,Cama." class="caja" type="text">
+                        </div>
+                        <div class="part part-2">
+                            <div class="part-2-1">
+                                <p>Cantidad de productos.</p>
+                                <input required placeholder="Ingrese el numero de productos" class="caja" type="number">
+                            </div>
+                            <div class="part-2-2">
+                                <p>Monto de la venta.</p>
+                                <input required placeholder="Ingrese el total de la venta" class="caja" type="number">
+                            </div>
+                        </div>
+                        <div class="cont-btns">
+                            <input class="btn1" type="button" value="Limpiar">
+                            <input type="button" value="Guardar">
+                        </div>
+                    </form>
+                </div>
+               </div>
+               <div class="parte-central-ventas-tablas">
+                <div class="encabezado">
+                    <h3>Ventas del 04 de septiembre del 2022 (Hoy)</h3>
+                    <div class="ayuda">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <a href="#">Informacion</a>
+                    </div>
+                </div>
+                <div class="cont-tabla">
+                    
+                </div>
+               </div>
+            </div>
+        </div>
+    </main> 
+    </div>
+   
+
+    <script src="../Java-Scrips-frontend/Funcionales/Dashboard.js"></script>
+  
+ 
+</body>
+</html>

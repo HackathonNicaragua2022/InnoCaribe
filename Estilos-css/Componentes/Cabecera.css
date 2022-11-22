@@ -140,25 +140,23 @@
 }
 .botones-header
 {
-    height: 37px;
     
-    padding: 0 20px;
+    padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
+    font-family: var(--Roboto);
+    font-size: 13px;
+    font-weight: 600;
 }
-.botones-header:nth-child(1)
-{
-    
-}
+
 .btn-1-header
 {
+    font-family: var(--Roboto);
     background: none;
     border-radius: 5px;
 }
-.btn-1-header:hover
-{
-    background: rgba(0,0, 0,0.1);
-}
+
 .btn-2-header
 {
     background: var(--Azul-Primario);
@@ -167,20 +165,21 @@
     border-radius: 5px;
 }
 /*! icono para desplegar el menu*/
-.hamburger
+.btn-h
 {
     position: relative;
     display: none;
-    transform: translatex(200px);
+    overflow: hidden;
+    
 }
 /*! Estilos de la parte pegajosa de la barra de navegacion.*/
 
 .barra-navegacion.sticky ul a{
     color: aliceblue;
 }
-.barra-navegacion.sticky .cont-icono h1
+.barra-navegacion.sticky .contenido-icono h1
 {
-    color: var(--Blanco);
+    color:var(--Blanco);
 }
 .barra-navegacion.sticky .btn-1-header
 {

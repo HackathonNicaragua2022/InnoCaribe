@@ -66,7 +66,7 @@ form
     justify-content: space-between;
     margin: 70px 0;
 }
-.columna
+form .columnap
 {
     width: 31%;
     min-width: 300px;
@@ -85,7 +85,7 @@ form
     margin-bottom: 30px;
     position: relative;
 }
-.linia>p,.columna3>p,.resolucion p,.info p
+.linia>p,.columna3p>p,.resolucion p,.info p
 {
     font-family: var(--Raleway);
     margin-bottom: 10px;
@@ -228,7 +228,7 @@ form
 {
     width: 150px;
 }
-.columna3>input
+.columna3p > input
 {
   width: 100%;
   padding: 12px 0;
@@ -289,4 +289,42 @@ form
 .info i:hover
 {
     color: var(--Azul-Primario);
+}
+
+footer
+{
+    width: 100%;
+    background: var(--Negro);
+}
+
+/*..............................................................*/
+#Letras-L
+{
+  color: #ffe;
+}
+#Enlace a
+{
+  color: rgb(233, 229, 229);
+}
+#Enlace:nth-child(4) a
+{
+  
+}
+.barra-navegacion.sticky #Enlace:nth-child(4) a
+{
+  color: var(--Amarillo-Primario);
+}
+#boton-h1
+{
+  border: 2px solid #ccc;
+  color: #ccc;
+}
+#boton-h1:hover
+{
+   color: #fff;
+   border:2px solid #fff;
+}
+#EP a
+{
+  color:hsl(241, 54%, 36%);
 }

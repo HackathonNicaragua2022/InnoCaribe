@@ -13,6 +13,13 @@
 .parte-central-ventas
 {
     width: 100%;
+    transition: all 0.4s;
+    overflow: hidden;
+    display: none;
+}
+.parte-central-ventas-activa
+{
+    display: block;
 }
 .parte-central-ventas-superior
 {
@@ -195,9 +202,309 @@
 
 .cont-tabla
 {
+    position: relative;
     width: 100%;
     border: 1px solid #000;
     border-radius: 8px;
-    height: 70vh;
+    height: 80vh;
     margin: 20px 0;
+    padding: 20px;
+    
+}
+.part-superior-tabla
+{
+    width: 95%;
+    margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.part-superior-tabla h4
+{
+    font-size: 16px;
+}
+.cont-part-superior-tabla .btn1 input
+{
+    padding: 8px 35px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(0,0,0, 0.4);
+    margin-right: 15px;
+}
+.cont-part-superior-tabla .btn1 i
+{
+    margin-top: 3px;
+    color: var(--Gris-Claro);
+    transform: translateX(30px);
+}
+.btn2 input
+{
+    padding: 8px 45px;
+    border: none;
+    border-radius: 6px;
+    color: rgb(236, 232, 232);
+    box-shadow: 0 0 3px rgba(0,0,0, 0.3);
+    background: var(--Azul-Primario);
+}
+.btn2 i
+{
+    color: #fff;
+    transform: translateX(38px);
+}
+.cont-part-superior-tabla
+{
+    display: flex;
+}
+
+
+/*?.....................................*/
+.funcionalidad-tabla
+{
+    width: 98%;
+    margin: 20px auto;
+}
+.encabezado-tabla
+{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--Azul-Primario);
+    border-radius: 8px;
+    box-shadow: 0 3px 2px rgba(0,0,0, 0.3);
+}
+.encabezado-tabla .part1
+{
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.enc2
+{
+    transform: translatex(-60px);
+}
+.enc3{
+    transform: translatex(-40px);
+}
+.enc4{
+    transform: translatex(-40px);
+}
+
+/*?estilos de cada registro de ventas*/
+.registro-venta
+{
+    width: 97%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0,0,0, 0.4);
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+}
+.cont-total
+{
+    display: flex;
+    align-items: center;
+    
+}
+.cont-total img
+{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.cont-total i
+{
+    margin-left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.registro-venta p:nth-child(2)
+{
+   
+}
+.registro-venta p:nth-child(1)
+{
+    width: 5%;
+}
+.registro-venta p:nth-child(2)
+{
+    width: 45%;
+}
+.registro-venta p:nth-child(3)
+{
+    width: 10%;
+}
+.registro-venta p:nth-child(4)
+{
+    width: 70%;
+}
+
+
+/*Estilos para la tabla con tabla*/
+.funcionalidad-tabla
+{
+width: 100%;
+}
+
+table
+{
+    border-spacing: 0;
+    margin-top: 1rem;
+    width: 97%;
+    margin: 0 auto;
+}
+ thead
+{
+    border: 1px solid var(--Azul-Primario);
+    height: 60px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+   
+    border-radius: 8px;
+    box-shadow: 0 0px 4px rgba(0,0,0, 0.5);
+}
+thead tr
+{
+    width: 100%;
+}
+thead th
+{
+    padding: 10px 5px;
+}
+tbody td
+{
+    font-size: 14px;
+    font-weight: 500;
+   padding: 10px;
+   text-align: center;
+   border-bottom: 1px solid #cac9c9;
+}
+.price
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.price img
+{
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+}
+.iconoption
+{
+    font-size: 20px;
+    cursor: pointer;
+}
+.iconoption:hover
+{
+    color: var(--Gris-Primario);
+}
+
+.table-footer
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.table-footer
+{
+    position: absolute;
+    bottom: 0;
+    float: inline-end;
+}
+.table-footer tr 
+{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.table-footer tr td
+{
+    font-weight: bold;
+}
+.table-footer .price
+{
+    text-align: right;
+}
+.table-footer tr td:nth-child(1) 
+{
+    text-align: left;
+}
+.table-footer tr td:nth-child(2) 
+{
+   margin-right: 60px;
+}
+.table-footer tr td:nth-child(2) i
+{
+    font-size: 18px;
+    margin-left: 80px;
+}
+
+
+
+
+/*Estilos para el filtrador de busqueda*/
+.filtro-ventas
+{
+    margin-top: 60px;
+}
+.contenedor-filtros
+{
+    position: relative;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 8px;
+    height: 20vh;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.filtro1,.filtro2,.filtro3,.filtro4
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.cont-caja p
+{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.filtro1>input,.filtro2>input,.filtro3>input,.filtro4>input
+{
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.btn-bu
+{
+    margin-right: 10px;
+}
+.btn-bu i
+{
+    background: var(--Azul-Primario);
+    padding: 12px;
+    color: #fff;
+    border-radius: 7px;
+    box-shadow:  0 0 3px rgba(0,0,0, 0.4);
+    cursor: pointer;
+}
+.btn-bu:hover i
+{
+    color: #ccc;
 }

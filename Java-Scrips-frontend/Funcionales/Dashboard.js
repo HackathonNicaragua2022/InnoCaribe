@@ -1,4 +1,4 @@
-
+//!Integracion de la grafica........
 const $ctx=document.querySelector("#mi-grafico")
 const names=['Enero','Febrero','Marzo','Abril','Mayo']
 const edades=[3100,2300,2846,2967,3210]
@@ -37,3 +37,6 @@ const grafica=new Chart($ctx,{
         },
     }
 }); 
+
+
+

@@ -13,7 +13,7 @@ class UI
 {
     agregarventas(Venta)
     {
-      const lista_producto=document.getElementById('lista_producto');
+      const lista_ventas=document.getElementById('lista_producto');
       const elemento = document.createElement('div');
       elemento.innerHTML=`
       <div  class="card text-center mb-4 conventa"   data-aos="fade-down"
@@ -40,6 +40,7 @@ class UI
     ?xdxdxdxdxdx
     *looooool
     */ 
+   /*!evento para eliminar la venta
     eliminarproductos(element)
     {
       if (element.name==='delete')
@@ -51,7 +52,9 @@ class UI
       }
 
     }
-  
+    */ 
+    /*!Mostrar mensaje de una forma llaga*/
+    /*
     mostrarmensajes(mensaje,cssClass,time)
     {
       const div= document.createElement('div');
@@ -67,5 +70,32 @@ class UI
       {
         document.querySelector('.alert').remove();
       },time);
-    }
+    }*/
 }
+document.getElementById('product-form').addEventListener("submit", function(e)
+{
+
+    const name=document.getElementById('nombre').value;
+    const price=document.getElementById('precio').value;
+    const year=document.getElementById('año').value;
+    const Productos= new Product(name,price,year);
+    const ui=new UI();
+
+    if(name==="" || price==="" || year==="")
+    {
+       return ui.mostrarmensajes('complete los espacios','danger',2500);
+    }
+    aparecerbarra();
+    ui.agregarproducto(Productos);
+    ui.resetform();
+    ui.mostrarmensajes('Producto agregado correctamente', 'success',2000);
+
+    //*cancelar los eventos por defecto
+    e.preventDefault();
+});
+
+document.getElementById('lista_producto').addEventListener('click',function(e)
+{
+    const ui=new UI();
+    ui.eliminarproductos(e.target);
+});

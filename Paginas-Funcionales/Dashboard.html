@@ -31,40 +31,40 @@
                 </div>
             </div>
             <div class="sidebar">
-                <a class="active btn-enlace" href="#">
+                <a class="active btn-enlace btn-dashboard" href="#">
                     <i class='bx bxs-dashboard'></i>
                     <h3>Dashborad</h3>
                 </a>
-                <a class="btn-enlace" href="#">
+                <a class="btn-enlace btn-orden" href="#">
                     <i class='bx bx-spreadsheet'></i>
                     <h3>Orden contable</h3>
                 </a>
-                <a class="btn-enlace" href="#">
+                <a class="btn-enlace btn-ventas" href="#">
                     <i class="fa-solid fa-sack-dollar"></i>
                     <h3>Ventas</h3>
                 </a>
-                <a class="btn-enlace" href="#">
+                <a class="btn-enlace btn-costos" href="#">
                     <i class='bx bxs-briefcase-alt'></i>
                     <h3>Costos y gastos</h3>
                 </a>
-                <a class="btn-enlace" href="#">
+                <a class="btn-enlace btn-mensaje" href="#">
                     <i class="fa-solid fa-message"></i>
                     <h3>Mensajes</h3>
                     <span class="mensaje">20</span>
                 </a>
-                <a class="btn-enlace" href="#">
+                <a class="btn-enlace btn-catalogo" href="#">
                     <i class="fa-solid fa-file"></i>
                     <h3>Catalogo</h3>
                 </a>
-                <a class="btn-enlace" href="#">
+                <a class="btn-enlace btn-moneda" href="#">
                     <i class='bx bxs-wallet'></i>
                     <h3>Moneda</h3>
                 </a>
-                <a class="btn-enlace" href="#">
+                <a class="btn-enlace btn-reportes" href="#">
                     <i class='bx bxs-report'></i>
                     <h3>Reportes</h3>
                 </a>
-                <a class="btn-enlace" href="#">
+                <a class="btn-enlace btn-documentacion" href="#">
                     <i class='bx bxs-book'></i>
                     <h3>Documentacion</h3>
                 </a>
@@ -238,17 +238,138 @@
                     </div>
                 </div>
                 <div class="cont-tabla">
-                    
+                    <div class="part-superior-tabla">
+                        <h4>Movimientos(4)</h4>
+                        <div class="cont-part-superior-tabla">
+                            <div class="btn1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input placeholder="Buscar...." type="search">
+                            </div>
+                            <div class="btn2">
+                                <i class="fa-solid fa-download"></i>
+                                <input type="button" value="Exportar">                        
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="funcionalidad-tabla">
+                        <table>
+                            <thead> 
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Descripcion</th>
+                                    <th>Cantidad</th>
+                                    <th>Monto</th>
+                                    <th><i class="fa-solid fa-clipboard"></i></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Cama,Pantalon,Gorra</td>
+                                    <td>10</td>
+                                    <td class="price"><img src="../Recursos/Imagenes/icons8-money-100.png" alt=""> 8,000.00 C$</td>
+                                    <td><i class="iconoption fa-solid fa-ellipsis-vertical"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Cama,Pantalon,Gorra</td>
+                                    <td>15</td>
+                                    <td class="price"><img src="../Recursos/Imagenes/icons8-money-100.png" alt=""> 16,000.00 C$</td>
+                                    <td><i class="iconoption fa-solid fa-ellipsis-vertical"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Cama,Pantalon,Gorra</td>
+                                    <td>6</td>
+                                    <td class="price"><img src="../Recursos/Imagenes/icons8-money-100.png" alt=""> 4,000.00 C$</td>
+                                    <td><i class="iconoption fa-solid fa-ellipsis-vertical"></i></td>
+                                </tr>
+                            </tbody>
+                           
+                        </table>
+                        <div class="table-footer">
+                            <table>
+                                <tr>
+                                    <td>5</td>
+                                   
+                                    <td class="price"><img src="../Recursos/Imagenes/icons8-money-100.png" alt=""> 28,000.00 C$ <i class="fa-solid fa-ghost"></i></td>
+                                   
+                                  </tr>
+                            </table>
+                          </div>
+                       
+                    </div>
+                </div>
+                
+               </div>
+               <div class="filtro-ventas">
+                <div class="encabezado">
+                    <h3>Filtrar informacion de ventas</h3>
+                    <div class="ayuda">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <a href="#">Ayuda</a>
+                    </div>
+                </div>
+                <div class="contenedor-filtros">
+                    <div class="filtro1">
+                        <input type="checkbox">
+                        <div class="cont-caja">
+                            <p>Año</p>
+                            <input class="caja" type="number" value="2022">
+                        </div>
+                    </div>
+                    <div class="filtro2">
+                        <input type="checkbox">
+                        <div class="cont-caja">
+                            <p>Mes</p>
+                            <select class="caja" name="" id="">
+                                <option value="">Enero</option>
+                                <option value="">Febrero</option>
+                                <option value="">Marzo</option>
+                                <option value="">Abril</option>
+                                <option value="">Mayo</option>
+                                <option value="">Junio</option>
+                                <option value="">Julio</option>
+                                <option value="">Agosto</option>
+                                <option value="">Septiembre</option>
+                                <option value="">Octubre</option>
+                                <option value="">Noviembre</option>
+                                <option value="">Diciembre</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filtro3">
+                        <input type="checkbox">
+                        <div class="cont-caja">
+                            <p>Semana</p>
+                            <input class="caja" type="number" value="1" maxlength="4">
+                        </div>
+                    </div>
+                    <div class="filtro4">
+                        <input type="checkbox">
+                        <div class="cont-caja">
+                            <p>Dia</p>
+                            <select class="caja" name="" id="">
+                                <option value="">Lunez</option>
+                                <option value="">Martes</option>
+                                <option value="">Miercoles</option>
+                                <option value="">Jueves</option>
+                                <option value="">Viernes</option>
+                                <option value="">Sabado</option>
+                                <option value="">Domingo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="btn-bu">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
                </div>
             </div>
         </div>
     </main> 
     </div>
-   
-
     <script src="../Java-Scrips-frontend/Funcionales/Dashboard.js"></script>
-  
- 
+    <script src="../Java-Scrips-frontend/Funcionales/Dashboard-side.js"></script>
 </body>
 </html>

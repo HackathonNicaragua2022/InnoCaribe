@@ -173,16 +173,19 @@ aside
 }
 .sidebar a.active
 {
+    transition: all .4s;
     background: rgb(219, 217, 217);
     color: var(--Azul-Primario);
     margin-left: 0;
 }
 .sidebar a.active i
 {
+    transition: all .4s;
     margin-left: calc(1rem - 3px);
 }
 .sidebar a.active::before
 {
+    transition: all .4s;
     content: '';
     width: 6px;
     height: 100%;
@@ -593,6 +596,15 @@ canvas
 
 /*!Ocultar parte central del dashboard*/
 .parte-central
+{
+    
+    transition: all 0.4s;
+}
+.parte-central-activa
+{
+    display: block;
+}
+.parte-central-inactiva
 {
     display: none;
     overflow: hidden;

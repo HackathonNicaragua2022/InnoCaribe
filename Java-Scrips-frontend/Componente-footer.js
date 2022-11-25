@@ -18,29 +18,29 @@ class Footer extends HTMLElement
            <div class="columna columna-1-footer">
             <img src="Recursos/Imagenes/logo-removebg-preview.png" alt="">
             <h2>EAS</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta alias eum quas quo debitis odio explicabo eaque vel sunt soluta.</p>
+            <p>EAS ba mucho ma haya que una simple pagina de ayuda para la contabilidad si no que EAS sera tu asistente de fiebilidad casi comparado como un trabajador mas para tu empresa.</p>
          </div>
          <div class="columna columna-2-footer">
             <h3>Compañia</h3>
             <div class="linia"></div>
-            <a href="#">Opciones</a>
-            <a href="#">Opciones</a>
-            <a href="#">Opciones</a>
-            <a href="#">Opciones</a>
-            <a href="#">Opciones</a>
-            <a href="#">Opciones</a>
+            <a href="#">Que es EAS</a>
+            <a href="#">El equipo</a>
+            <a href="#">Los consultores</a>
+            <a href="#">Nuestra identidad</a>
+            <a href="#">Marca y logotipo</a>
+            <a href="#">El Progreso</a>
          </div>
          <div class="columna columna-2-footer">
             <h3>Legal</h3>
             <div class="linia"></div>
-            <a href="#">Opciones</a>
-            <a href="#">Opciones</a>
-            <a href="#">Opciones</a>
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Terminos y condiciones</a>
+            <a href="#">Politica de reembolsos</a>
             <h3>Ayuda</h3>
             <div class="linia"></div>
-            <a href="#">Opciones</a>
-            <a href="#">Opciones</a>
-            <a href="#">Opciones</a>
+            <a href="#">Servicio para empresas</a>
+            <a href="#">Consultoria</a></a>
+            <a href="#">Analisis</a>
          </div>
          <div class="columna columna-3-footer">
             <h3>Siguenos</h3>

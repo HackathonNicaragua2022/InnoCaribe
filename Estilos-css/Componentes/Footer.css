@@ -90,6 +90,7 @@
     font-family: var(--Raleway);
     font-weight: 400;
     transition: 0.3s;
+    text-align: left;
 }
 .columna-2-footer a:hover
 {

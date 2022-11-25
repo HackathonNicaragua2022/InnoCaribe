@@ -31,7 +31,6 @@ class Cabecera extends HTMLElement
                            <div class="contenedor-botones-header">
                            <a href="./Inicio-sesion.html" id="boton-h1" class="botones-header btn-1-header">Login</a> 
                            <a href="./Registrar.html" class="botones-header btn-2-header" >¡Inicia gratis!</a>
-                           
                         </div>
                     </div>
                   </div>
